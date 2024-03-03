@@ -2,17 +2,13 @@ package xyz.roxwize.remotedetonator;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.item.Item;
-import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.material.ToolMaterial;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import turniplabs.halplibe.helper.BlockBuilder;
 import turniplabs.halplibe.helper.ItemHelper;
 import turniplabs.halplibe.helper.RecipeBuilder;
-import turniplabs.halplibe.helper.RegistryHelper;
 import turniplabs.halplibe.util.ConfigHandler;
 import turniplabs.halplibe.util.GameStartEntrypoint;
-import turniplabs.halplibe.util.RecipeEntrypoint;
 
 import java.util.Properties;
 
@@ -43,8 +39,8 @@ public class RemoteDetonator implements ModInitializer, GameStartEntrypoint {
 	private void initializeRecipies() {
 		RecipeBuilder.Shaped(MOD_ID).setShape(
 				"S",
-				"S",
-				"R")
+				"R",
+				"S")
 			.addInput('S', Item.ingotSteel)
 			.addInput('R', Item.dustRedstone)
 			.create("detonator", detonator.getDefaultStack());

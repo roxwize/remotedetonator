@@ -9,8 +9,8 @@ To craft a remote detonator:
 
 ```
 S
-S
 R
+S
 ```
 
 where `S` is a **steel ingot** and `R` is **redstone dust**.
