@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "remotedetonator",
+  "version": "${version}",
+
+  "name": "Remote Detonator",
+  "description": "Blow stuff up from far away",
+  "authors": [
+    "roxwize"
+  ],
+  "contact": {
+    "homepage": "https://roxwize.xyz/",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"xyz.roxwize.remotedetonator.RemoteDetonator"
+    ],
+		"afterGameStart": [
+			"xyz.roxwize.remotedetonator.RemoteDetonator"
+		]
+	},
+
+  "depends": {
+		"minecraft": "~7.1-beta.1",
+    "fabricloader": ">=0.13.3"
+  },
+  "suggests": {
+  }
+}

@@ -1,0 +1,4 @@
+item.remotedetonator.detonator.name=Remote Detonator
+item.remotedetonator.detonator.message.default=[DETONATOR] USE on a TNT to arm, USE again to detonate from up to 128 blocks away.
+item.remotedetonator.detonator.message.armed=[DETONATOR] Armed!
+item.remotedetonator.detonator.message.too_far=[DETONATOR] Out of range! (>128 blocks away)
